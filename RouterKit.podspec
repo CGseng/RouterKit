@@ -18,8 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
 
   spec.source       = { :git => "https://github.com/CGseng/RouterKit.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = 'SDK/Mediator.framework'
-  spec.source_files  = "Mediator/Mediator/*.{h,m}"
-
+  # spec.source_files  = "Mediator/Mediator/*.{h}"
+  spec.vendored_frameworks = 'Mediator/Mediator.framework'
 
 end
